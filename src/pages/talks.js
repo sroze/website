@@ -2,7 +2,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import React from "react"
 import { TalkList } from "../components/talk-list"
-import Talks from "../data/talks.yaml";
+import Talks from "../data/talks.yaml"
 
 const TalksPage = () => (
   <Layout>
@@ -11,6 +11,6 @@ const TalksPage = () => (
 
     <TalkList talks={Talks} />
   </Layout>
-);
+)
 
-export default TalksPage;
+export default TalksPage

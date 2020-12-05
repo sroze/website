@@ -21,7 +21,7 @@ module.exports = {
       options: {
         url: `http://www.rssmix.com/u/12574667/rss.xml`,
         name: `MyArticles`,
-      }
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
