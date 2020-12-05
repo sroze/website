@@ -35,9 +35,11 @@ const Layout = ({ children }) => {
       <footer
         style={{
           marginTop: `2rem`,
+          fontSize: 12,
+          color: '#616161'
         }}
       >
-        © {new Date().getFullYear()}
+       Samuel Rozé © {new Date().getFullYear()}
       </footer>
     </div>
   )
