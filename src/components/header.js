@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import tw from "twin.macro"
 import Layout from "./layout"
+import { IconLink } from "./iconLink"
 
 const Image = tw.img`
   w-16 h-16 rounded-xl`;
@@ -19,17 +20,9 @@ const Header = ({ siteTitle }) => (
       <div>
         <Title>{siteTitle}</Title>
 
-        <Link href="https://www.linkedin.com/in/samuel-roze-1963751b/">
-          <FontAwesomeIcon icon={faLinkedin} size="1x" />
-        </Link>
-
-        <Link href="https://github.com/sroze">
-          <FontAwesomeIcon icon={faGithub} size="1x" />
-        </Link>
-
-        <Link href="https://twitter.com/samuelroze">
-          <FontAwesomeIcon icon={faTwitter} size="1x" />
-        </Link>
+        <IconLink href="https://www.linkedin.com/in/samuel-roze-1963751b/" icon={faLinkedin} />
+        <IconLink href="https://github.com/sroze" icon={faGithub} />
+        <IconLink href="https://twitter.com/samuelroze" icon={faTwitter} />
       </div>
       <p tw="font-mono text-xs">VP of Engineering at <a href="https://birdie.care">Birdie</a>. Public speaker & open-source maintainer.</p>
     </div>

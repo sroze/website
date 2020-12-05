@@ -1,12 +1,16 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, Link as GatsbyLink } from "gatsby"
 import tw from "twin.macro"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Link = tw.a`hover:underline`;
+import Talks from "../data/talks.yaml";
+import { TalkList } from "../components/talk-list"
+import { Link } from "../components/link"
+
 const VisibleLink = tw(Link)`text-blue-500 hover:underline`;
+const VisibleGatsbyLink = tw(GatsbyLink)`text-blue-500 hover:underline`;
 
 const IndexPage = () => (
   <Layout>
@@ -63,10 +67,13 @@ const IndexPage = () => (
           </div>
           <div>
               <h2 tw="text-xl font-semibold text-green-500">Conference Talks</h2>
-              <p>Yayyaa</p>
-              <p>Yayyaa</p>
-              <p>Yayyaa</p>
-              <p>Yayyaa</p>
+              <TalkList talks={Talks.slice(0, 10)} />
+
+              {Talks.length > 10 ? (
+                <div tw={"text-right"}>
+                  <VisibleGatsbyLink to={"/talks"}>See {Talks.length - 10} more ➡</VisibleGatsbyLink>
+                </div>
+              ) : null}
           </div>
           <div>
               <h2 tw="text-xl font-semibold text-pink-500">Archived projects</h2>

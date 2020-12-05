@@ -28,6 +28,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
     "gatsby-plugin-emotion": "^5.0.0",
+    "gatsby-transformer-yaml": "^2.7.0",
     "prettier": "2.1.2",
     "tailwindcss": "^2.0.1",
     "twin.macro": "^2.0.4"
