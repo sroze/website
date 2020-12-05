@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
     <Image src={require('../images/profile.jpg')} />
     <div tw="p-1 pl-4">
       <div>
-        <Title>Samuel Rozé</Title>
+        <Title>{siteTitle}</Title>
 
         <Link href="https://www.linkedin.com/in/samuel-roze-1963751b/">
           <FontAwesomeIcon icon={faLinkedin} size="1x" />
