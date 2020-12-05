@@ -85,15 +85,12 @@ const IndexPage = () => (
                 .slice(0, 10)
                 .map(({ node: { title, link, dc: { date } } }) => (
                   <li key={link}>
-                    <Link href={link}>
-                      <span tw="font-mono text-gray-400">
-                        {new Intl.DateTimeFormat("en-GB").format(
-                          new Date(date)
-                        )}{" "}
-                        -{" "}
-                      </span>
-                      {title}
-                    </Link>
+                    <span tw="font-mono text-gray-400">
+                      {new Intl.DateTimeFormat("en-GB").format(new Date(date))}{" "}
+                      -{" "}
+                    </span>
+
+                    <Link href={link}>{title}</Link>
                   </li>
                 ))}
               {edges.length > 10 ? (
