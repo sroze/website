@@ -1,3 +1,13 @@
+- name: 'Why JSON-LD and what is it?'
+  conference: API Platform Conference 2021
+  date: 2021-09-10
+  link: https://api-platform.com/con/2021/
+  
+- name: 'RDF: What is it?'
+  conference: AFUP Day Lille Online 2021
+  date: 2021-05-28
+  link: https://event.afup.org/afup-day-2021/afup-day-2021-lille-rennes-edition-en-ligne/
+
 - name: 'Event Streaming: An alternative to CRUD & Batch'
   conference: Symfony World 2020
   date: 2020-12-03
