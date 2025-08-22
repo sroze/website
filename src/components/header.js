@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import tw from "twin.macro"
 import { IconLink } from "./iconLink"
-import profileImage from "../images/profile.jpg"
+import profileImage from "../images/profile.jpeg"
 
 const Image = tw.img`
   w-16 h-16 rounded-xl`
