@@ -30,8 +30,9 @@ const Header = ({ siteTitle }) => (
         <IconLink href="https://twitter.com/samuelroze" icon={faTwitter} />
       </div>
       <p tw="font-mono text-xs">
-        VP of Engineering at <a href="https://birdie.care">Birdie</a>. Public
-        speaker & open-source maintainer.
+        Co-founder & CTO at <a href="https://kor.care">Kor</a>. Previously VPoE
+        @ <a href="https://birdie.care">Birdie</a>. Public speaker & open-source
+        maintainer.
       </p>
     </div>
   </div>
