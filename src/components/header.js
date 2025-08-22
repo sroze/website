@@ -1,25 +1,23 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGithub,
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 import tw from "twin.macro"
-import Layout from "./layout"
 import { IconLink } from "./iconLink"
+import profileImage from "../images/profile.jpg"
 
 const Image = tw.img`
   w-16 h-16 rounded-xl`
 
-const Link = tw.a`mr-2 text-gray-400 hover:text-blue-500`
 const Title = tw.h1`text-2xl text-gray-800 inline-block mr-3`
 
 const Header = ({ siteTitle }) => (
-  <div tw="flex flex-row mt-2 my-6">
-    <Image src={require("../images/profile.jpg")} />
+  <div tw="flex flex-row pt-2 my-6">
+    <Image src={profileImage} />
     <div tw="p-1 pl-4">
       <div>
         <Title>{siteTitle}</Title>

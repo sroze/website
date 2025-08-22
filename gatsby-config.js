@@ -15,15 +15,15 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-source-rss-feed`,
       options: {
-        url: `http://www.rssmix.com/u/12574667/rss.xml`,
+        url: `http://medium.com/feed/@sroze`,
         name: `MyArticles`,
       },
     },
-    `gatsby-plugin-fontawesome-css`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

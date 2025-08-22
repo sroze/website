@@ -1,5 +1,4 @@
-import tw from "twin.macro"
-
+import "twin.macro"
 import { IconLink } from "./iconLink"
 import {
   faChalkboardTeacher,
